@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Figtree", sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.rdrDefinedRangesWrapper {
+    display: none;
+}
+
+.rdrDateDisplayWrapper {
+    display: none;
+}
+
+.searchModal .rdrMonth {
+    width: 100%;
+}
+
+input:focus~.input-transition,
+input:not(:placeholder-shown)~.input-transition {
+    @apply text-black bg-white transform -translate-y-6 -translate-x-2 scale-90
+}
